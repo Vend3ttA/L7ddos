@@ -1318,6 +1318,7 @@ class MainLoop():
                         BOTS   : {2} 
                       ╚══════════════════════════════════════════════════╝
 """.format(str(target), int(num_threads), len(file_proxy)))
+        break
 
 
 
