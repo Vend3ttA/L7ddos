@@ -1305,7 +1305,9 @@ class MainLoop():
         in_line = in_file.readline()
         fucker(target, i + 1, in_line).start()
         in_line = in_line[:-1]
-        print(Fore.RED + """
+        while True:
+            os.system('ulimit -n 999999 && ulimit -n 999999 && ulimit -n 999999 && ulimit -n 999999 && ulimit -n 999999 && ulimit -n 999999 && clear && clear')
+            print(Fore.RED + """
 
                              ╔═════════════════════════════════════╗
                              ║╔═╗┬ ┬┌┐ ┌─┐┬─┐╔╦╗┌─┐┌─┐┬┌─┐  ╔═╗╦ ╦ ║
@@ -1317,12 +1319,9 @@ class MainLoop():
                         THREAD : {1}
                         BOTS   : {2} 
                       ╚══════════════════════════════════════════════════╝
-""".format(str(target), int(num_threads), len(file_proxy)))
-        break
-
-
-
-
-
+                      """.format(str(target), int(num_threads), len(file_proxy)))
+            break
+        os.system('clear')
+        
 if __name__ == '__main__':
     MainLoop().home()
