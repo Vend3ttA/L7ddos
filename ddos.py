@@ -1315,11 +1315,11 @@ class MainLoop():
                            ╚═════╦═══════════════════════════════╦═════╝
                                  ║                               ║
                       ╔══════════╩═══════════════════════════════╩════════╗
-                        TARGET : [{0}]
-                        THREAD : [{1}]
-                        BOTS   : [{2}] 
+                        TARGET  : [{0}]
+                        THREADS : [{1}]
+                        BOTNETS : [{2}] 
                       ╚═══════════════════════════════════════════════════╝
-                      """.format(str(target), int(num_threads), len(referers)))
+                      """.format(str(target), int(num_threads), len(file_proxy)))
             break
 
 if __name__ == '__main__':
