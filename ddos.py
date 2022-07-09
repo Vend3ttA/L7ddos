@@ -1318,7 +1318,7 @@ class MainLoop():
                         THREADS : [{1}]
                         BOTNETS : [{2}] 
                       ╚═══════════════════════════════════════════════════╝
-                      """.format(str(target), int(num_threads), len(file_proxy)))
+                      """.format(str(target), int(num_threads), len(referers)))
             break
 
 if __name__ == '__main__':
