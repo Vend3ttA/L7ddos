@@ -1255,7 +1255,6 @@ class MainLoop():
 
     def home(self):
         global Close, Request, Tot_req
-        os.system('clear')
 
     print(Fore.LIGHTRED_EX + "█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█")
     print(Fore.LIGHTRED_EX + "█                                                                                            █")
