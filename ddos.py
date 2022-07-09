@@ -1321,7 +1321,7 @@ class MainLoop():
                       ╚═══════════════════════════════════════════════════╝
                       """.format(str(target), int(num_threads), len(file_proxy)))
             break
-        os.system('clear')
+        
 
 if __name__ == '__main__':
     MainLoop().home()
